@@ -1,0 +1,21 @@
+# Projekt-Kontext & Agenten-Einstellungen
+GEMINI.md
+.antigravity/
+.antigravity-ide/
+.antigravitycli/
+
+# IDE & Editor-Ordner
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*~
+
+# Build- & temporäre Dateien
+build/
+dist/
+bin/
+obj/
+/tmp/
+*.bak
+*.log
