@@ -206,7 +206,7 @@ if ls /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor >/dev/null 2>&1; the
 fi
 if [ -x /usr/local/bin/ryzenadj ]; then
     echo "Begrenze Ryzen TDP auf ${TDP_WATT}W (${TDP_LIMIT}mW)..."
-    /usr/local/bin/ryzenadj --stapm-limit=${TDP_LIMIT} --fast-limit=${TDP_LIMIT} --slow-limit=${TDP_LIMIT} >/dev/null
+    /usr/local/bin/ryzenadj --stapm-limit=${TDP_LIMIT} --fast-limit=${TDP_LIMIT} --slow-limit=${TDP_LIMIT} --apu-slow-limit=${TDP_LIMIT} >/dev/null
 fi
 
 echo -e "\n\${C_BLUE}----------------------------------------------------\${NC}"
